@@ -1,0 +1,9 @@
+#!/usr/bin/python3
+import sys
+
+ans=0.0
+for n in sys.stdin:
+     ans += float(n)
+
+print(ans)
+
