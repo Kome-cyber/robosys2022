@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 import sys
 
-ans=0.0
+ans=0
 for n in sys.stdin:
     try:
         ans += int(n)
