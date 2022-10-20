@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 # SPDX-FileCopyrightText: 2022 Koumei Ainoya
-
+# SPDX-License-Identifier: BSD-3-Clause
 import sys
 
 def tonum(s):
