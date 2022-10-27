@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -xv
 # SPDX-FileCopyrightText: 2022 Koumei Ainoya
 # SPDX-License-Identifier: BSD-3-Clause
  ng (){
@@ -6,11 +6,17 @@
 	 res=1
  }
  res=0
-
 out=$(seq 5 | ./plus)
-
 [ "${out}" = 15 ] || ng ${LINENO}
 
-[ "$res" = 0 ] && echo OK
-exit $res
+out=$(echo あ | ./plus)
+[ "${out}" = 1 ] || ng ${LINENO}
+[ "${out}" = " " ] || ng ${LINENO}
 
+out=$(echo  | ./plus)
+[ "${out}" = 1 ] || ng ${LINENO}
+[ "${out}" = " " ] || ng ${LINENO}
+
+[ "$res" = 0 ] && echo OK
+
+exit $res
