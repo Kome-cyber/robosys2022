@@ -6,16 +6,9 @@
 	 res=1
  }
  res=0
+
 out=$(seq 5 | ./plus)
 [ "${out}" = 15 ] || ng ${LINENO}
-
-out=$(echo あ | ./plus)
-[ "${out}" = 1 ] || ng ${LINENO}
-[ "${out}" = " " ] || ng ${LINENO}
-
-out=$(echo  | ./plus)
-[ "${out}" = 1 ] || ng ${LINENO}
-[ "${out}" = " " ] || ng ${LINENO}
 
 [ "$res" = 0 ] && echo OK
 
