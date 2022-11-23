@@ -8,7 +8,7 @@
  res=0
 
 out=$(seq 5 | ./plus)
-[ "${out}" = 15 ] || ng ${LINENO}
+[ "${out}" = 15 , -15 , 120 , 0.008333333333333333 ] || ng ${LINENO}
 
 out=$(echo あ | ./plus)
 [ "$?" = 1 ]       || ng ${LINENO}
