@@ -1,4 +1,4 @@
-# plusコマンド
+# sisokuコマンド
 [![test](https://github.com/Kome-cyber/robosys2022/actions/workflows/test.yml/badge.svg)](https://github.com/Kome-cyber/robosys2022/actions/workflows/test.yml)
 
 * 標準入力から数字を読み取り、四つの計算を行う。
