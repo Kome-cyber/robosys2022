@@ -2,6 +2,7 @@
 [![test](https://github.com/Kome-cyber/robosys2022/actions/workflows/test.yml/badge.svg)](https://github.com/Kome-cyber/robosys2022/actions/workflows/test.yml)
 
 * 標準入力から読み込んだ数字を足す。
+例
 ```
 seq 10 | ./plus
 55
