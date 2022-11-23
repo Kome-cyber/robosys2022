@@ -10,8 +10,17 @@ def tonum(s):
         return float(s)
 
 ans=0
+sa=0
+seki=1
+syou=1
+
 for line in sys.stdin:
     ans += tonum(line)
+    sa -= tonum(line)
+    seki *= tonum(line)
+    syou /= tonum(line)
 
 print(ans)
-
+print(sa)
+print(seki)
+print(syou)
