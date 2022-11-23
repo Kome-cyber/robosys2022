@@ -13,6 +13,5 @@ ans=0
 for line in sys.stdin:
     ans += tonum(line)
 
-
 print(ans)
 
