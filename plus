@@ -20,7 +20,4 @@ for line in sys.stdin:
     seki *= tonum(line)
     syou /= tonum(line)
 
-print(ans)
-print(sa)
-print(seki)
-print(syou)
+print(ans,sa,seki)
