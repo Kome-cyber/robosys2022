@@ -7,14 +7,14 @@
  }
  res=0
 
-out=$(seq 5 | ./plus)
+out=$(seq 5 | ./sisoku)
 [ "${out}" = 15 , -15 , 120 , 0.008333333333333333 ] || ng ${LINENO}
 
-out=$(echo あ | ./plus)
+out=$(echo あ | ./sisoku)
 [ "$?" = 1 ]       || ng ${LINENO}
 [ "${out}" = "" ] || ng ${LINENO}
 
-out=$(echo | ./plus)
+out=$(echo | ./sisoku)
 [ "$?" = 1 ]       || ng ${LINENO}
 [ "${out}" = "" ] || ng ${LINENO}
 
